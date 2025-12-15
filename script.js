@@ -14,8 +14,7 @@ menuCloseButton.addEventListener('click', () => {
 navlinks.forEach(link => {
   link.addEventListener('click',()=>menuOpenButton.click)
   
-});()
-
+});
 // intialise swipper 
 const swiper = new Swiper('.slider-wrapper', {
   // Optional parameters
