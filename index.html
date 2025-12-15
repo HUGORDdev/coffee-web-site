@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- <title>Document</title> -->
+    <!-- linking Swipper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -27,27 +29,27 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="#about" class="nav-link">
                         About
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="#menu" class="nav-link">
                         Menu
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="#testimonials" class="nav-link">
                         Testimonials
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="#gallery" class="nav-link">
                         Gallery
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="#contact" class="nav-link">
                         Contact
                     </a>
                 </li>
@@ -73,7 +75,7 @@
                 </div>
             </div>
         </section>
-        <section class="about-section">
+        <section class="about-section" id="about">
             <div class="section-content">
                 <div class="about-image-wrapper">
                     <img src="images/about-image.jpg" alt="about" class="about-image">
@@ -102,7 +104,7 @@
                 </div>
         </section>
         <!-- Menu section -->
-        <section class="menu-section">
+        <section class="menu-section" id="menu">
             <h2 class="section-title">
                 Our Menu
             </h2>
@@ -168,51 +170,187 @@
             </div>
         </section>
         <!-- Testimonial section -->
-        <section class="testimonials-section">
+        <section class="testimonials-section" id="testimonials">
+            <h2 class="section-title">Testimonials</h2>
             <div class="section-content">
-                <div class="slide-wrapper">
-                    <ul class="testimonials-list">
-                        <li class="testimonial">
-                            <img src="images/user-1.jpg" alt="User" class="user-image">
-                            <h3 class="name">Sarah Johson</h3>
-                            <i class="feedback">
-                                "The ambiance and aroma of Coffee Haven instantly transport me to a world of relaxation.
-                                Their cappuccinos are a work of art!"
-                            </i>
-                        <li class="testimonial">
-                            <img src="images/user-2.jpg" alt="User" class="user-image">
-                            <h3 class="name">james Wilson</h3>
-                            <i class="feedback">
-                                "Coffee Haven has become my go-to spot for both work and leisure. The staff are friendly,
-                                and the coffee is consistently excellent."
-                            </i>
-                        <li class="testimonial">
-                            <img src="images/user-3.jpg" alt="User" class="user-image">
-                            <h3 class="name">Micheal Brown</h3>
-                            <i class="feedback">
-                                "I can't get enough of Coffee Haven's unique blends. Each visit is a delightful journey of
-                                flavors that keeps me coming back for more."
-                            </i>
-                        <li class="testimonial">
-                            <img src="images/user-4.jpg" alt="User" class="user-image">
-                            <h3 class="name">Emily Harris</h3>
-                            <i class="feedback">
-                                "The cozy atmosphere at Coffee Haven makes it the perfect place to unwind. Their latte art
-                                is simply stunning!"
-                            </i>
-                        <li class="testimonial">
-                            <img src="images/user-5.jpg" alt="User" class="user-image">
-                            <h3 class="name">Anthony Thomson</h3>
-                            <i class="feedback">
-                                "Best decaf I've tried! Smoooth and flavorful without the jitters. Coffee Haven knows their
-                                stuff."
-                            </i>
-                        </li>
-                    </ul>
+                <div class="slider-container swiper">
+                    <div class="slider-wrapper">
+                        <ul class="testimonials-list swiper-wrapper">
+                            <li class="testimonial swiper-slide  ">
+                                <img src="images/user-1.jpg" alt="User" class="user-image">
+                                <h3 class="name">Sarah Johson</h3>
+                                <i class="feedback">
+                                    "The ambiance and aroma of Coffee Haven instantly transport me to a world of
+                                    relaxation.
+                                    Their cappuccinos are a work of art!"
+                                </i>
+                            </li>
+                            <li class="testimonial swiper-slide ">
+                                <img src="images/user-2.jpg" alt="User" class="user-image">
+                                <h3 class="name">james Wilson</h3>
+                                <i class="feedback">
+                                    "Coffee Haven has become my go-to spot for both work and leisure. The staff are
+                                    friendly,
+                                    and the coffee is consistently excellent."
+                                </i>
+                            </li>
+                            <li class="testimonial swiper-slide ">
+                                <img src="images/user-3.jpg" alt="User" class="user-image">
+                                <h3 class="name">Micheal Brown</h3>
+                                <i class="feedback">
+                                    "I can't get enough of Coffee Haven's unique blends. Each visit is a delightful
+                                    journey of
+                                    flavors that keeps me coming back for more."
+                                </i>
+                            </li>
+                            <li class="testimonial swiper-slide ">
+                                <img src="images/user-4.jpg" alt="User" class="user-image">
+                                <h3 class="name">Emily Harris</h3>
+                                <i class="feedback">
+                                    "The cozy atmosphere at Coffee Haven makes it the perfect place to unwind. Their
+                                    latte art
+                                    is simply stunning!"
+                                </i>
+                            </li>
+                            <li class="testimonial swiper-slide ">
+                                <img src="images/user-5.jpg" alt="User" class="user-image">
+                                <h3 class="name">Anthony Thomson</h3>
+                                <i class="feedback">
+                                    "Best decaf I've tried! Smoooth and flavorful without the jitters. Coffee Haven
+                                    knows their
+                                    stuff."
+                                </i>
+                            </li>
+                        </ul>
+
+                        <!-- If we need navigation buttons -->
+                        <div class=" swiper-pagination"></div>
+                        <div class="swipper-slide-button swiper-button-prev"></div>
+                        <div class="swipper-slide-button swiper-button-next"></div>
+
+                        <!-- If we need scrollbar -->
+                    </div>
                 </div>
             </div>
         </section>
+        <!-- Gallery section -->
+        <section class="gallery-section" id="gallery">
+            <div class="section-title">Gallery</div>
+            <div class="section-content">
+                <ul class="gallery-list">
+                    <li class="gallery-item">
+                        <img src="images/gallery-1.jpg" alt="Gallery" class="gallery-image">
+                    </li>
+                    <li class="gallery-item">
+                        <img src="images/gallery-2.jpg" alt="Gallery" class="gallery-image">
+                    </li>
+                    <li class="gallery-item">
+                        <img src="images/gallery-3.jpg" alt="Gallery" class="gallery-image">
+                    </li>
+                    <li class="gallery-item">
+                        <img src="images/gallery-4.jpg" alt="Gallery" class="gallery-image">
+                    </li>
+                    <li class="gallery-item">
+                        <img src="images/gallery-5.jpg" alt="Gallery" class="gallery-image">
+                    </li>
+                    <li class="gallery-item">
+                        <img src="images/gallery-6.jpg" alt="Gallery" class="gallery-image">
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Contact section -->
+        <section class="contact-section" id="contact">
+            <h2 class="section-title">
+                COntact Us
+            </h2>
+            <div class="section-content">
+                <ul class="contact-info-list">
+                    <li class="contact-info">
+                        <i class="fa-solid fa-location-crosshairs"></i>
+                        <p>
+                            123 Coffee St, Caffeine City, CA 12345
+                        </p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-regular fa-envelope"></i>
+                        <p>
+                            juniordita78@gmail.com
+                        </p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>
+                            +237 671617223
+                        </p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-regular fa-clock"></i>
+                        <p>
+                            Monday - Friday: 8:00 AM - 8:00 PM
+                        </p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-regular fa-clock"></i>
+                        <p>
+                            Saturday: 9:00 AM - 6:00 PM
+                        </p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-regular fa-clock"></i>
+                        <p>
+                            Sunday: closed
+                        </p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-solid fa-globe"></i>
+                        <p>
+                            www.yop.agency
+                        </p>
+                    </li>
+                </ul>
+                <form action="#" class="contact-form">
+                    <!-- <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div> -->
+                    <input type="text" class="form-input" required placeholder="Your Name">
+                    <input type="email" class="form-input" required placeholder="Your Email">
+                    <textarea class="form-input" required placeholder="Your Message" required></textarea>
+                    <button type="submit" class="button submit-button">Send Message</button>
+                </form>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer class="footer-section">
+            <div class="section-content">
+                <p class="copyright-text">
+                    &copy; 2025 Coffee Haven. All rights reserved.
+                </p>
+                <div class="social-link-list">
+                    <a href="#" class="social-link">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </div>
+                <p class="policy-text">
+                    <a href="#" class="policy-link">Privacy policy</a>
+                    <span class="divider">|</span>
+                    <a href="#" class="policy-link"> Refund  policy</a>
+                </p>
+            </div>
+        </footer>
+
     </main>
+
+    <!-- Linking Swipper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 
